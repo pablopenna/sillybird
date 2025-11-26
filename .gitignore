@@ -40,5 +40,6 @@
 # debug information files
 *.dwo
 
-# Build directory
-build/
+# Ignore everything in the build directory except the directory itself
+build/*
+!build/.gitkeep
