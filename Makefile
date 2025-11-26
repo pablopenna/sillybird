@@ -2,7 +2,10 @@
 CXX = g++
 
 # Compiler flags
-CXXFLAGS = -std=c++11 -Wall -I./include # Using C++11 for compatibility with older hardware/systems
+## Using C++17 for compatibility with older hardware/systems.
+## Crow requires at least C++17
+## pthread required by crow
+CXXFLAGS = -std=c++17 -Wall -I./include -lpthread
 
 # Output binary name
 TARGET = build/main
